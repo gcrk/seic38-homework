@@ -25,7 +25,7 @@ if line_start == line_finish
   else
     journey = mta_map[line_start].reverse[mta_map[line_start].reverse.index(stop_start)..mta_map[line_start].reverse.index(stop_finish)]
   end
-  puts "You must travel through the following stops on the #{line_start} line: #{journey[0..-2].join(", ")} until you arrive at #{mta_map[line_finish][mta_map[line_finish].index(stop_finish)]}."
+  puts "You must travel through the following stops on the #{line_start} line: #{journey[0..-2].join(", ")} until you arrive at #{stop_finish}."
   puts "#{journey.length} stops in total"
 else
   connection_stop = "Union Square"
@@ -42,7 +42,7 @@ else
   end
   puts "You must travel through the following stops on the #{line_start} line: #{journey_start[0..-2].join(", ")}."
   puts "Change at #{connection_stop}."
-  puts "Your journey continues through the following stops on the #{line_finish} line: #{journey_finish[1..-2].join(", ")} until you arrive at #{mta_map[line_finish][mta_map[line_finish].index(stop_finish)]}."
+  puts "Your journey continues through the following stops on the #{line_finish} line: #{journey_finish[1..-2].join(", ")} until you arrive at #{stop_finish}."
   puts "#{journey_start.length + journey_finish.length - 1 } stops in total"
 
 end

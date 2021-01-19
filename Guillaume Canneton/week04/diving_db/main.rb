@@ -37,7 +37,7 @@ end
 post '/diving/:id' do
   query = "UPDATE diving_center SET name='#{params[:name]}', country='#{params[:country]}', city='#{params[:city]}', map='#{params[:map]}', website='#{params[:website]}' WHERE id=#{params[:id]}"
   query_database query
-  redirect to "/diving"
+  redirect to "/diving/#{params[:id]}"
 end
 
 get '/diving/:id/delete' do

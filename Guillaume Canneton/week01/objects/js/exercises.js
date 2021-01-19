@@ -91,11 +91,11 @@ const triangleC = {
 
 
 const areaT = function(triangle){
-  let a = triangle.sideA;
-  let b = triangle.sideB;
-  let c = triangle.sideC;
-  let p = a + b + c;
-  let area = Math.round(Math.sqrt( p * ( p - a ) * ( p - b ) * ( p - c ) ) * 100) / 100;
+  const a = triangle.sideA;
+  const b = triangle.sideB;
+  const c = triangle.sideC;
+  const p = a + b + c;
+  const area = Math.round(Math.sqrt( p * ( p - a ) * ( p - b ) * ( p - c ) ) * 100) / 100;
   return `The area is ${area}`
 }
 console.log(areaT(triangleA));
@@ -103,9 +103,9 @@ console.log(areaT(triangleB));
 console.log(areaT(triangleC));
 
 const isObtuse = function(triangle){
-  let a = triangle.sideA;
-  let b = triangle.sideB;
-  let c = triangle.sideC;
+  const a = triangle.sideA;
+  const b = triangle.sideB;
+  const c = triangle.sideC;
   if ( a > b && a > c){
     if ( a * a > ( b * b + c * c )){
       return `The triangle is obtuse`;
@@ -238,6 +238,8 @@ console.log(validateCreditCard(cardNumber2));
 console.log(validateCreditCard(cardNumber3));
 console.log(validateCreditCard(cardNumber4));
 console.log(validateCreditCard(cardNumber5));
+
+
 
 
 // ## Example

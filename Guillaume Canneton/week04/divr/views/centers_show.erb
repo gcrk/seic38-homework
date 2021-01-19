@@ -1,0 +1,17 @@
+<h2>Here is the infos about <%= @center["name"] %></h2>
+
+<ul>
+  <li>Country: <%= @center["country"] %></li>
+  <li><a href="<%= @center["website"] %>" target="_blank">Website</a></li>
+</ul>
+<ul>
+  <% @center.instructors.each do |instructor| %>
+    <li><%= instructor.name %>
+  <% end %>
+</ul>
+
+  <div id="edit_delete">
+    <a href="/diving/<%= @center["id"] %>/edit">edit</a>
+    <a href="/diving/<%= @center["id"] %>/delete">delete</a>
+
+  </div>

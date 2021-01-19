@@ -1,0 +1,9 @@
+<h2>Here the list of all the diving centers</h2>
+
+<% @centers.each do |center| %>
+<ul>
+  <li><a href="/center/<%= center["id"] %>">
+    <%= center["name"] %>
+  </a></li>
+</ul>
+<% end %>

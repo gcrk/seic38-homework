@@ -1,5 +1,8 @@
 
 class SinglyLinkedList
+
+include Enumerable
+
   class Node
     attr_accessor :value, :next
 
@@ -61,16 +64,31 @@ class SinglyLinkedList
   end
 
   def reverse # non destructive
-    
+    reversed_list = SinglyLinkedList.new
+    current_node = @head
+    while current_node
+      reversed_list.prepend(current_node.value)
+      current_node = current_node.next
+    end
+    reversed_list
   end
 
   def reverse! # destructive
-
+    @head = self.reverse.head
   end
 
   def each
+    current_node = @head
+    while current_node
+      yield(current_node.value) if block_given?
+      current_node = current_node.next
+    end
+  end
+
+  def map
 
   end
+
 
 end
 

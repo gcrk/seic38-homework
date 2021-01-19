@@ -9,7 +9,7 @@ get 'secretnumber' => 'secretnumber#home'
 get 'secretnumber/play' => 'secretnumber#play'
 
 get 'rockpaperscissors' => 'rockpaperscissors#home'
-get 'rockpaperscissors/:throw' => 'rockpaperscissors#throw'
+get 'rockpaperscissors/:throw' => 'rockpaperscissors#result'
 
 
 end

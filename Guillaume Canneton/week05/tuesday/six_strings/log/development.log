@@ -2733,3 +2733,67 @@ Processing by GuitarsController#index as HTML
 Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for ::1 at 2021-01-16 10:48:37 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (2.0ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:3
+  Rendered guitars/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 218ms (Views: 138.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/guitars" for ::1 at 2021-01-16 10:48:42 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.3ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:3
+  Rendered guitars/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars/new" for ::1 at 2021-01-16 10:48:43 +1100
+Processing by GuitarsController#new as HTML
+  Rendering guitars/new.html.erb within layouts/application
+  Rendered guitars/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guitars" for ::1 at 2021-01-16 10:48:47 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:3
+  Rendered guitars/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/guitars/2" for ::1 at 2021-01-16 10:48:48 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:6
+  Rendering guitars/show.html.erb within layouts/application
+  Rendered guitars/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars/3" for ::1 at 2021-01-16 10:48:53 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:6
+  Rendering guitars/show.html.erb within layouts/application
+  Rendered guitars/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/guitars/11" for ::1 at 2021-01-16 10:48:57 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:6
+  Rendering guitars/show.html.erb within layouts/application
+  Rendered guitars/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.1ms)
+
+

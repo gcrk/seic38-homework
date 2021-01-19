@@ -5,7 +5,7 @@ class RockpaperscissorsController < ApplicationController
   end
 
 
-  def throw
+  def result
     @play = ["rock", "paper", "scissors", "lizard", "spock"]
     @cpu_play = @play[rand(0..4)]
     @player_play = params[:throw]
@@ -43,7 +43,7 @@ class RockpaperscissorsController < ApplicationController
         @result = "defeat"
       end
     end
-    render :throw
+    render :result
   end
 
 end
